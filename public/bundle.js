@@ -87,7 +87,7 @@
 			return _react2.default.createElement(
 				"div",
 				null,
-				_react2.default.createElement(_App8.default, null)
+				_react2.default.createElement(_App12.default, null)
 			);
 		}
 	});
@@ -19955,9 +19955,17 @@
 
 	"use strict";
 	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _Child = __webpack_require__(187);
+	
+	var _Child2 = _interopRequireDefault(_Child);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -19968,33 +19976,50 @@
 				"div",
 				null,
 				"App",
-				_react2.default.createElement(Child, null)
+				_react2.default.createElement(_Child2.default, { name: "Jeff" })
 			);
 		}
 	});
+	
+	exports.default = App;
 
 /***/ },
 /* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Child = __webpack_require__(188);
+	
+	var _Child2 = _interopRequireDefault(_Child);
+	
+	var _StatelessComp = __webpack_require__(189);
+	
+	var _StatelessComp2 = _interopRequireDefault(_StatelessComp);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
-		displayName: "App",
+		displayName: 'App',
 		render: function render() {
 			return _react2.default.createElement(
-				"div",
+				'div',
 				null,
-				_react2.default.createElement(Child, null)
+				_react2.default.createElement(_Child2.default, { names: ["name", "othername"] }),
+				_react2.default.createElement(_StatelessComp2.default, { name: "Jeffrey" })
 			);
 		}
 	});
+	
+	exports.default = App;
 
 /***/ },
 /* 166 */
@@ -21183,6 +21208,110 @@
 	  };
 	};
 
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Child = _react2.default.createClass({
+		displayName: "Child",
+		getDefaultProps: function getDefaultProps() {
+			return {
+				name: "Dan"
+			};
+		},
+		render: function render() {
+			return _react2.default.createElement(
+				"div",
+				null,
+				this.props.name
+			);
+		}
+	});
+	
+	exports.default = Child;
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Child = _react2.default.createClass({
+		displayName: "Child",
+	
+		propTypes: {
+			names: _react2.default.PropTypes.array.isRequired
+		},
+		render: function render() {
+			return _react2.default.createElement(
+				"div",
+				null,
+				this.props.names.map(function (name, index) {
+					return _react2.default.createElement(
+						"p",
+						{ key: index },
+						name
+					);
+				})
+			);
+		}
+	});
+	
+	exports.default = Child;
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	exports.default = function (_ref) {
+		var name = _ref.name;
+	
+		return _react2.default.createElement(
+			"div",
+			null,
+			_react2.default.createElement(
+				"h1",
+				null,
+				"Stateless ",
+				name
+			)
+		);
+	};
+	
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }
 /******/ ]);

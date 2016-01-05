@@ -71,6 +71,8 @@
 	- Javascript Types
 - How
 - Why
+###Bonus! Stateless Functions
+- They exist
 
 ###Mixins
 - [Goodbye Mixins!](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.u56vju3gt)

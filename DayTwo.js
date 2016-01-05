@@ -13,7 +13,7 @@ var DayTwo = React.createClass({
 	render() {
 		return (
 			<div>
-				<AsyncData />
+				<PropTypes />
 			</div>
 		)	
 	}
