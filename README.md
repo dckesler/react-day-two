@@ -1,5 +1,5 @@
-##Day Two of React For DevMountain
-###Things to cover
+#Day Two of React For DevMountain
+##Things to cover
 - Webpack
 - Basic React Review
 - Component Life-Cycle
@@ -75,4 +75,4 @@
 ###Mini Project
 - Try not to get lost in the steps
 - Continually think of what you're trying to build over what you think the step wants
-- You're learning how JavaScript works more than how React works
+- You're learning how JavaScript works more than React-specific syntax
