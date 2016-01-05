@@ -72,6 +72,9 @@
 - How
 - Why
 
+###Mixins
+- [Goodbye Mixins](!https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.u56vju3gt)
+
 ###Mini Project
 - Try not to get lost in the steps
 - Continually think of what you're trying to build over what you think the step wants
