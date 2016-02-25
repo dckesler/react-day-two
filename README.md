@@ -36,7 +36,7 @@
 	- onKeyUp
 	- onWhateverElseYouNeed
 - Props
-	- <Component prop={value} />
+	- `<Component prop={value} />`
 	- this.props
 
 ###Component Life-Cycle
@@ -69,6 +69,9 @@
 ###Prop Types
 - Types
 	- Javascript Types
+	- Advanced typing
+	  - shape
+	  - arrayOf
 - How
 - Why
 
