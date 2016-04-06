@@ -5,7 +5,7 @@ import Child from './Child.js';
 const Parent = React.createClass({
 	getInitialState() {
 		return {
-			name: "Dan",
+			names: "Dan",
 			lastName: ""
 		}
 	},

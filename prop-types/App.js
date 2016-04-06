@@ -1,4 +1,5 @@
 import React from "react";
+import Child from './Child.js';
 
 var App = React.createClass({
 	render() {
@@ -9,3 +10,5 @@ var App = React.createClass({
 		)
 	}
 })
+
+export default App;

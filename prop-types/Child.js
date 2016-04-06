@@ -1,6 +1,11 @@
 import React from "react";
 
 var Child = React.createClass({
+	propTypes: {
+		value: React.PropTypes.shape({
+			number: React.PropTypes.number.isRequired
+		})
+	},
 	render() {
 		return (
 			<div>
@@ -9,3 +14,5 @@ var Child = React.createClass({
 		)	
 	}
 })
+
+export default Child;

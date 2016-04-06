@@ -10,3 +10,5 @@ var Display = React.createClass({
 		)	
 	}
 })
+
+export default Display;
