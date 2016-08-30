@@ -1,6 +1,6 @@
 import React from "react";
 
-var Child = React.createClass({
+export default React.createClass({
 	render() {
 		return (
 			<h1>Child Component</h1>

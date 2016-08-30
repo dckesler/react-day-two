@@ -1,6 +1,6 @@
 import React from "react";
 import Display from "./Display";
-var App = React.createClass({
+export default React.createClass({
 	render() {
 		<div>
 			<form>
@@ -13,5 +13,3 @@ var App = React.createClass({
 		console.log(e)	
 	}
 });
-
-export default App

@@ -1,6 +1,6 @@
 import React from "react";
 
-var App = React.createClass({
+export default React.createClass({
 	render() {
 		return (
 			<div>
