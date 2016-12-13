@@ -7,11 +7,11 @@ import AsyncData from './async-data/App.js';
 import DefaultProps from './default-props/App.js';
 import PropTypes from './prop-types/App.js';
 
-var DayTwo = React.createClass({
+const DayTwo = React.createClass({
 	render() {
 		return (
 			<div>
-				<ReactReview />
+				<PropTypes />
 			</div>
 		)	
 	}

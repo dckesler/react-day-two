@@ -1,10 +1,11 @@
 import React from "react";
+import Child from './Child.js';
 
 export default React.createClass({
 	render() {
 		return (
 			<div>
-				<Child />
+				<Child name={1}/>
 			</div>
 		)
 	}

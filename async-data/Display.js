@@ -1,12 +1,14 @@
 import React from "react";
 
-export default React.createClass({
+export default class Display extends React.Component {
+	static defaultProps = {
+		img: 'http://thecraftchop.com/files/others/Pokeball.svg'
+	}
 	render() {
 		return (
 			<div>
-				<h1>{this.props.temp}</h1>
-				<h1>{this.props.weather}</h1>
+				<img src={this.props.img} />
 			</div>
 		)	
 	}
-})
+}

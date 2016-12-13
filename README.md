@@ -1,7 +1,7 @@
 #Day Two of React For DevMountain
 ##Things to cover
 - Webpack
-- Basic React Review
+- Basic React Review (skip)
 - Component Life-Cycle
 - Asynchronous Data
 - Small JS Context Review
@@ -24,7 +24,7 @@
 	- Ouput
 	- Loaders
 
-###Basic React Review
+###Basic React Review (skip)
 - Render Method
 	- JSX
 	- Curly Braces for JS
@@ -39,6 +39,8 @@
 	- `<Component prop={value} />`
 	- this.props
 
+###Class Extends
+
 ###Component Life-Cycle
 - Mounting
 	- componentWillMount
@@ -51,7 +53,7 @@
 ###Small JS Context Review
 - Function.prototype.bind
 	- Context
-	- Currying
+	- Partial Application
 
 ###Asynchronous Data
 - jQuery?
